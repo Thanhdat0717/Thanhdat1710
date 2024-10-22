@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="facebook.css">
 </head>
 <body>
+    <script>
+        function validateForm(event) {
+          event.preventDefault();
+  
+          var ho = document.getElementById("ho").value;
+          var ten = document.getElementById("ten").value;
+          var mail = document.getElementById("mail").value;
+          var password = document.getElementById("Password").value;
+          var ngay = document.getElementById("ngay").value;
+          var thang = document.getElementById("thang").value;
+          var nam = document.getElementById("nam").value;
+          var gender = document.querySelector('input[name="gender"]:checked');
+  
+          if (!ho || !ten || !mail || !password || !ngay || !thang || !nam || !gender) {
+            alert("Vui lòng điền đầy đủ thông tin.");
+          } else {
+            var fullName = ho + " " + ten;
+            var dob = ngay + "/" + thang + "/" + nam;
+            var genderText = gender.value;
+  
+            var successMessage = "Xin chào " + fullName + ", sinh ngày " + dob + ", giới tính " + genderText + ", đã đăng ký thành công.";
+            
+           
+            document.getElementById("hienThi").innerText = hienThi;
+          }
+        }
+      </script>
     <div class="content">
         <h1>FACEBOOK</h1>
         <div class="top">

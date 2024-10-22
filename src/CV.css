@@ -1,0 +1,76 @@
+body{
+    margin-left: 20%;
+    margin-right: 30%;
+}
+.content{
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    min-height: 900px;
+    background: #fff;
+    margin: 50px;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(45deg,#231fbf,#69175f);
+}
+.group{
+    position: relative;
+    display: grid;
+    gap: 40px;
+    width: 100%;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 20px;
+}
+.group .imgBx{
+    position: relative;
+    width: 100%;
+}
+.group .imgBx img{
+    width: 65%;
+    margin-left: 10%;
+}
+.group p{
+    color:#fff;
+    font-size: 1.05em;
+    margin-right: 15%;
+}
+.bottom .left_side{
+    margin-top: 50px;
+}
+h2{
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #fff;
+    background: #231fbf;
+    font-weight: 600;
+    padding: 0 15px;
+    margin-top: 40px;
+    display: inline-flex;
+}
+.ContactInfo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    margin: 20px 0;
+}
+.ContactInfo li{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.ContactInfo li .icon{
+    color: #231fbf;
+}
+.ContactInfo li .text{
+    color: #555;
+}
+.bottom .right_side{
+    margin-left: 35%;
+    margin-top: -445px;
+}
